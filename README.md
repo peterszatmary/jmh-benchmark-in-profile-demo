@@ -1,4 +1,4 @@
-# jmh-benchmark-demo
+# jmh-benchmark-in-profile-demo
 [![Build Status](https://travis-ci.org/peterszatmary/jmh-benchmark-in-profile-demo.svg?branch=master)](https://travis-ci.org/peterszatmary/jmh-benchmark-in-profile-demo)
 
 [Java Microbenchmark Harness (JMH)](http://openjdk.java.net/projects/code-tools/jmh/) that runs with Junit and Maven.

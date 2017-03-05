@@ -1,4 +1,6 @@
 language: java
 jdk:
   - oraclejdk8
-script: mvn package
+script:
+  - mvn clean package
+  - mvn clean test -P benchmark-test

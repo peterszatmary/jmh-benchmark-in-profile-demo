@@ -12,8 +12,7 @@ Is the second version from project [jmh-benchmark-demo](https://github.com/peter
 
 ## How to run other tests except benchmarks ##
 
-Excluding the benchmark test source files from test compiling is done with [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/). See the **testExcludes** configuration
- part with used pattern.
+Excluding the benchmark test source files from test compiling is done with [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/). See the **testExcludes** configuration part with used pattern.
 
 ```xml
 <plugin>

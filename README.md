@@ -1,5 +1,7 @@
-# jmh-benchmark-in-profile-demo
+# jmh-benchmark-in-profile-demo #
+
 [![Build Status](https://travis-ci.org/peterszatmary/jmh-benchmark-in-profile-demo.svg?branch=master)](https://travis-ci.org/peterszatmary/jmh-benchmark-in-profile-demo)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cde6f2aa116b4b91a2d69aa38c2895b0)](https://www.codacy.com/app/peterszatmary/jmh-benchmark-in-profile-demo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=peterszatmary/jmh-benchmark-in-profile-demo&amp;utm_campaign=Badge_Grade)
 
 [Java Microbenchmark Harness (JMH)](http://openjdk.java.net/projects/code-tools/jmh/) that runs with Junit and Maven.
 
@@ -8,11 +10,9 @@ test with maven profile.
 
 Is the second version from project [jmh-benchmark-demo](https://github.com/peterszatmary/jmh-benchmark-demo)
 
+## How to run other tests except benchmarks ##
 
-## How to run other tests except benchmarks
-
-Excluding the benchmark test source files from test compiling is done with [maven-compiler-plugin]
-(https://maven.apache.org/plugins/maven-compiler-plugin/). See the **testExcludes** configuration
+Excluding the benchmark test source files from test compiling is done with [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/). See the **testExcludes** configuration
  part with used pattern.
 
 ```xml
@@ -45,13 +45,14 @@ Excluding the benchmark test source files from test compiling is done with [mave
 ```
 
 You can run other than benchmark test with command
-```
+
+```bash
 mvn clean test
 ```
 
 Output :
 
-```
+```text
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
@@ -67,8 +68,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 ```
 
-
-## How to run just benchmark tests
+## How to run just benchmark tests ##
 
 Excluding is also done with [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/).
 Excluded is everything except benchmark tests.
@@ -104,13 +104,14 @@ Excluded is everything except benchmark tests.
 ```
 
 You can run other than benchmark test with command
-```
+
+```bash
 mvn clean test -P benchmark-test
 ```
 
 Output :
 
-```
+```text
 Benchmark                   Mode  Cnt   Score   Error  Units
 SampleBenchmarkTest.newWay  avgt    2  12.372          ms/op
 SampleBenchmarkTest.oldWay  avgt    2  10.632          ms/op

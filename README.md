@@ -1,7 +1,6 @@
 # jmh-benchmark-in-profile-demo #
 
 [![Build Status](https://travis-ci.org/peterszatmary/jmh-benchmark-in-profile-demo.svg?branch=master)](https://travis-ci.org/peterszatmary/jmh-benchmark-in-profile-demo)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cde6f2aa116b4b91a2d69aa38c2895b0)](https://www.codacy.com/app/peterszatmary/jmh-benchmark-in-profile-demo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=peterszatmary/jmh-benchmark-in-profile-demo&amp;utm_campaign=Badge_Grade)
 
 [Java Microbenchmark Harness (JMH)](http://openjdk.java.net/projects/code-tools/jmh/) that runs with Junit and Maven.
 
